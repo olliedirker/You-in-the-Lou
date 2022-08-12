@@ -12,23 +12,15 @@ html {
   background-color: #edf6f9;
 }
 
-header {
-  border: solid black 2px;
-}
-
-.title {
-  font-size: 50px;
-}
-
 a {
   text-decoration: none;
-  color: #03045e;
+  color: #1434a4;
   font-weight: bold;
   transition: color 0.1s;
 }
 
 a:hover {
-  color: #b72126;
+  color: #e42217;
 }
 
 button {
@@ -80,27 +72,47 @@ form label {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  max-width: 1200px;
+  max-width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 header {
+  position: relative;
   border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1%;
+  padding: 3% 5%;
+}
+
+.backgroundimage {
+  background-image: url(../assets/st.-louis-header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 50px;
+  text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 30px #fff;
+}
+
+.header-nav {
+  font-size: 20px;
+  text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 30px #fff;
 }
 
 main {
   flex: 1;
   padding: 2% 4%;
+}
+
+.widget {
+  border: black solid 2px;
+  float: right;
+  width: 30%;
+  height: auto;
 }
 
 .btn-no-style {
@@ -179,11 +191,6 @@ main {
 
 .edit-post-form {
   margin-bottom: 5%;
-}
-
-.widget {
-  border: black solid 2px;
-  float: right;
 }
 
 footer {
