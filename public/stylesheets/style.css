@@ -1,17 +1,20 @@
+/* root */
 * {
   box-sizing: border-box;
 }
 
+/* body */
 body,
 html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Chivo', sans-serif;
   color: #333;
   background-color: #edf6f9;
 }
 
+/* links */
 a {
   text-decoration: none;
   color: #1434a4;
@@ -23,24 +26,69 @@ a:hover {
   color: #e42217;
 }
 
-button {
-  background-color: #225ca3;
-  border: 0;
-  padding: 1%;
-  color: white;
-  font-weight: bold;
-  transition: background-color 0.1s;
-  cursor: pointer;
-  border-radius: 5px;
+/* header */
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-button:hover {
-  background-color: #3486eb;
+header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+}
+
+header h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 1em;
+  text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 30px #fff;
+}
+
+.header-nav {
+  font-family: 'Unica One', cursive;
+  font-size: 1em;
+  text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 30px #fff;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* main */
+main {
+  flex: 1;
+  padding: 2% 4%;
 }
 
 .post-list {
   margin: 0;
   padding: 0;
+}
+
+.widget {
+  border: black solid 2px;
+  float: right;
+  width: 30%;
+  height: auto;
+}
+
+/* login */
+.signup-form {
+  float: left;
+}
+
+.login-form {
+  float: right;
 }
 
 textarea,
@@ -69,50 +117,20 @@ form label {
   display: block;
 }
 
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 75%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+button {
+  background-color: #ffea00;
+  border: 0;
+  padding: 5%;
+  color: #1434a4;
+  font-weight: bold;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-header {
-  position: relative;
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3% 5%;
-}
-
-.backgroundimage {
-  background-image: url(../assets/st.-louis-header.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-header h1 {
-  font-size: 50px;
-  text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 30px #fff;
-}
-
-.header-nav {
-  font-size: 20px;
-  text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 30px #fff;
-}
-
-main {
-  flex: 1;
-  padding: 2% 4%;
-}
-
-.widget {
-  border: black solid 2px;
-  float: right;
-  width: 30%;
-  height: auto;
+button:hover {
+  background-color: #1434a4;
+  color: white;
 }
 
 .btn-no-style {
@@ -199,4 +217,5 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+  font-family: 'Unica One', cursive;
 }
