@@ -54,6 +54,7 @@ header h1 {
   font-size: 1.1em;
   text-decoration: underline;
   text-underline-offset: 1rem;
+  text-decoration-thickness: 2px;
 }
 
 /* skyline image */
@@ -78,12 +79,19 @@ main {
 }
 
 .widget {
-  border: black solid 2px;
   float: right;
   width: 30%;
   height: auto;
-  background-color: rgb(20, 52, 164, 0.2);
+  background-color: rgb(20, 52, 164, 0.15);
   line-height: 1.8;
+  border-radius: 25px;
+}
+
+.widget h2 {
+  color: #c41e3a;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-thickness: 1px;
 }
 
 /* login */
