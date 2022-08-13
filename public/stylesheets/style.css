@@ -64,7 +64,7 @@ header h1 {
   text-decoration-thickness: 2px;
 }
 
-/* dashboard button */
+/* nav dashboard button */
 .btn-no-style {
   background: none;
   border: none;
@@ -144,7 +144,7 @@ header h1 {
   float: right;
 }
 
-/* form styles for login page and dashboard */
+/* form styles for login page */
 textarea,
 input {
   padding: 0.5%;
@@ -171,7 +171,7 @@ form label {
   display: block;
 }
 
-/* all button styles */
+/* login button styles */
 button {
   background-color: rgb(255, 234, 0, 0.6);
   border: solid 1.5px #fedb00;
@@ -190,32 +190,7 @@ button:hover {
   border: solid 2px #ffea00;
 }
 
-/* like button */
-.upvote-btn {
-  color: white;
-  background-color: #1434a4;
-  transition: background-color 0.1s;
-}
-
-.upvote-btn:hover {
-  background-color: #ffea00;
-  color: #1434a4;
-}
-
-/* delete button */
-.delete-post-btn {
-  background-color: #e42217;
-  border: solid 1.5px #c41e3a;
-  color: white;
-}
-
-.delete-post-btn:hover {
-  background-color: rgb(228, 34, 23, 0.9);
-  color: #1434a4;
-  border: solid 2px #c41e3a;
-}
-
-/* post link display*/
+/* dashbaord */
 .post {
   margin-bottom: 2%;
   line-height: 150%;
@@ -240,6 +215,27 @@ button:hover {
   color: rgb(20, 52, 164, 0.6);
 }
 
+.new-post-form input {
+  width: 300px;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+/* delete button */
+.delete-post-btn {
+  background-color: #e42217;
+  border: solid 1.5px #c41e3a;
+  color: white;
+}
+
+.delete-post-btn:hover {
+  background-color: rgb(228, 34, 23, 0.9);
+  color: #1434a4;
+  border: solid 2px #c41e3a;
+}
+
 /* single post */
 .comment-form {
   margin-bottom: 5%;
@@ -260,13 +256,20 @@ button:hover {
   opacity: 0.6;
 }
 
-/* dashboard new post form */
-.new-post-form input {
-  width: 300px;
+.comment-btn {
+  color: white;
+  background-color: #1434a4;
+  border: 1.5px solid #fedb00;
+  transition: background-color 0.1s;
+  width: 12%;
 }
 
-.edit-post-form {
-  margin-bottom: 5%;
+.upvote-btn {
+  color: white;
+  background-color: #1434a4;
+  border: 1.5px solid #fedb00;
+  transition: background-color 0.1s;
+  width: 12%;
 }
 
 /* bottom of page */
@@ -277,5 +280,5 @@ footer {
   padding: 1%;
   font-size: 110%;
   font-family: 'Unica One', cursive;
-  color: #1434a4;
+  color: #0c2340;
 }
