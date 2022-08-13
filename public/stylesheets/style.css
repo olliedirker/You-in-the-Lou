@@ -203,12 +203,14 @@ button:hover {
 }
 
 .upvote-btn {
-  background-color: #197d0f;
+  color: white;
+  background-color: #1434a4;
   transition: background-color 0.1s;
 }
 
 .upvote-btn:hover {
-  background-color: #1f9c13;
+  background-color: #ffea00;
+  color: #1434a4;
 }
 
 .comment-form {
