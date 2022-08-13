@@ -14,6 +14,11 @@ html {
   background-color: #edf6f9;
 }
 
+main {
+  flex: 1;
+  padding: 0% 4% 2% 4%;
+}
+
 /* links */
 a {
   text-decoration: none;
@@ -59,6 +64,7 @@ header h1 {
   text-decoration-thickness: 2px;
 }
 
+/* dashboard button */
 .btn-no-style {
   background: none;
   border: none;
@@ -93,12 +99,7 @@ header h1 {
   margin-bottom: 1%;
 }
 
-/* main */
-main {
-  flex: 1;
-  padding: 0% 4% 2% 4%;
-}
-
+/* home page */
 .post-list {
   float: left;
   width: 68%;
@@ -122,7 +123,15 @@ main {
   text-decoration-thickness: 1px;
 }
 
-/* login */
+.widget a {
+  color: #0c2340;
+}
+
+.widget a:hover {
+  color: #1434a4;
+}
+
+/* login page */
 .flagimg img {
   width: 40%;
   height: 40%;
@@ -135,11 +144,12 @@ main {
   float: right;
 }
 
+/* form styles for login page and dashboard */
 textarea,
 input {
   padding: 0.5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 0.5px solid #0c2340;
 }
 
 textarea:focus,
@@ -161,24 +171,26 @@ form label {
   display: block;
 }
 
+/* all button styles */
 button {
-  background-color: #ffea00;
-  border: 0;
-  padding: 1%;
+  background-color: rgb(255, 234, 0, 0.6);
+  border: solid 1.5px #fedb00;
+  padding: 0.75%;
   color: #1434a4;
   font-weight: bold;
   transition: background-color 0.1s;
   cursor: pointer;
-  border-radius: 5px;
-  width: 150px;
+  border-radius: 8px;
+  width: 10%;
 }
 
 button:hover {
-  background-color: #1434a4;
+  background-color: rgb(20, 52, 164, 0.9);
   color: white;
+  border: solid 2px #ffea00;
 }
 
-/* single post */
+/* like button */
 .upvote-btn {
   color: white;
   background-color: #1434a4;
@@ -190,19 +202,27 @@ button:hover {
   color: #1434a4;
 }
 
+/* delete button */
 .delete-post-btn {
   background-color: #e42217;
+  border: solid 1.5px #c41e3a;
   color: white;
 }
 
 .delete-post-btn:hover {
-  background-color: rgb(228, 34, 23, 0.8);
+  background-color: rgb(228, 34, 23, 0.9);
   color: #1434a4;
+  border: solid 2px #c41e3a;
 }
 
+/* post link display*/
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+}
+
+.post a:hover {
+  color: rgb(20, 52, 164, 0.6);
 }
 
 .post .title span {
@@ -216,6 +236,11 @@ button:hover {
   margin: -1.5% 0 2% 0;
 }
 
+.edit-post-form a:hover {
+  color: rgb(20, 52, 164, 0.6);
+}
+
+/* single post */
 .comment-form {
   margin-bottom: 5%;
 }
@@ -235,6 +260,7 @@ button:hover {
   opacity: 0.6;
 }
 
+/* dashboard new post form */
 .new-post-form input {
   width: 300px;
 }
@@ -243,8 +269,9 @@ button:hover {
   margin-bottom: 5%;
 }
 
+/* bottom of page */
 footer {
-  border-top: 1px solid #fedb00;
+  border-top: thick double #fedb00;
   display: flex;
   justify-content: center;
   padding: 1%;
