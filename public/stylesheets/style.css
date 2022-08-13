@@ -10,7 +10,7 @@ html {
   padding: 0;
   margin: 0;
   font-family: 'Chivo', sans-serif;
-  color: #333;
+  color: black;
   background-color: #edf6f9;
 }
 
@@ -41,6 +41,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 4% 0 4%;
+  border-bottom: 1px solid #c41e3a;
+  margin-bottom: 1%;
 }
 
 header h1 {
@@ -111,7 +113,7 @@ input {
 textarea:focus,
 input:focus {
   outline: none;
-  border: 1px solid #3486eb;
+  border: 1px solid #e42217;
 }
 
 textarea {
@@ -222,10 +224,11 @@ button:hover {
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ffb612;
   display: flex;
   justify-content: center;
   padding: 1%;
   font-size: 110%;
   font-family: 'Unica One', cursive;
+  color: #1434a4;
 }
