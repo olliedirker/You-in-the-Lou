@@ -11,6 +11,7 @@ router.get('/', (req, res) => {
       'id',
       'post_url',
       'title',
+      'post_description',
       'created_at',
       [
         sequelize.literal(
@@ -58,6 +59,7 @@ router.get('/post/:id', (req, res) => {
       'id',
       'post_url',
       'title',
+      'post_description',
       'created_at',
       [
         sequelize.literal(

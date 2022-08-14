@@ -16,6 +16,7 @@ class Post extends Model {
           'id',
           'post_url',
           'title',
+          'post_description',
           'created_at',
           [
             sequelize.literal(
@@ -64,6 +65,10 @@ Post.init(
       validate: {
         isURL: true,
       },
+    },
+    post_description: {
+      type: DataTypes.TEXT,
+      allowNull: false,
     },
     user_id: {
       type: DataTypes.INTEGER,
