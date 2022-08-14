@@ -14,6 +14,11 @@ html {
   background-color: #edf6f9;
 }
 
+main {
+  flex: 1;
+  padding: 0% 4% 2% 4%;
+}
+
 /* links */
 a {
   text-decoration: none;
@@ -59,6 +64,31 @@ header h1 {
   text-decoration-thickness: 2px;
 }
 
+/* nav dashboard button */
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1434a4;
+  transition: color 0.1s;
+  margin-left: 16px;
+  font-family: 'Unica One', cursive;
+  font-size: 1.1em;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-thickness: 2px;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: #e42217;
+}
+
+.dashboard-btn {
+  font-size: 1.1em;
+}
+
 /* skyline image */
 .hero {
   width: 100%;
@@ -69,20 +99,17 @@ header h1 {
   margin-bottom: 1%;
 }
 
-/* main */
-main {
-  flex: 1;
-  padding: 0% 4% 2% 4%;
-}
-
+/* home page */
 .post-list {
+  float: left;
+  width: 68%;
   margin: 0;
   padding: 0;
 }
 
 .widget {
   float: right;
-  width: 30%;
+  width: 28%;
   height: auto;
   background-color: rgb(20, 52, 164, 0.15);
   line-height: 1.8;
@@ -96,18 +123,33 @@ main {
   text-decoration-thickness: 1px;
 }
 
-/* login */
+.widget a {
+  color: #0c2340;
+}
+
+.widget a:hover {
+  color: #1434a4;
+}
+
+/* login page */
 .flagimg img {
   width: 40%;
   height: 40%;
   float: right;
 }
 
+.heartimg img {
+  width: 20%;
+  height: 20%;
+  float: right;
+}
+
+/* form styles for login page */
 textarea,
 input {
   padding: 0.5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 0.5px solid #0c2340;
 }
 
 textarea:focus,
@@ -129,51 +171,33 @@ form label {
   display: block;
 }
 
+/* login button styles */
 button {
-  background-color: #ffea00;
-  border: 0;
-  padding: 1%;
+  background-color: rgb(255, 234, 0, 0.6);
+  border: solid 1.5px #fedb00;
+  padding: 0.75%;
   color: #1434a4;
   font-weight: bold;
   transition: background-color 0.1s;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
+  width: 10%;
 }
 
 button:hover {
-  background-color: #1434a4;
+  background-color: rgb(20, 52, 164, 0.9);
   color: white;
+  border: solid 2px #ffea00;
 }
 
-.btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  color: #225ca3;
-  font-size: 100%;
-  font-weight: bold;
-  transition: color 0.1s;
-  margin-left: 16px;
-}
-
-.btn-no-style:hover {
-  background: none;
-  color: #3486eb;
-}
-
-.delete-post-btn {
-  background-color: #d41414;
-}
-
-.delete-post-btn:hover {
-  background-color: #ff643d;
-}
-
+/* dashbaord */
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+}
+
+.post a:hover {
+  color: rgb(20, 52, 164, 0.6);
 }
 
 .post .title span {
@@ -187,15 +211,32 @@ button:hover {
   margin: -1.5% 0 2% 0;
 }
 
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color 0.1s;
+.edit-post-form a:hover {
+  color: rgb(20, 52, 164, 0.6);
 }
 
-.upvote-btn:hover {
-  background-color: #1f9c13;
+.new-post-form input {
+  width: 300px;
 }
 
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+/* delete button */
+.delete-post-btn {
+  background-color: #e42217;
+  border: solid 1.5px #c41e3a;
+  color: white;
+}
+
+.delete-post-btn:hover {
+  background-color: rgb(228, 34, 23, 0.9);
+  color: #1434a4;
+  border: solid 2px #c41e3a;
+}
+
+/* single post */
 .comment-form {
   margin-bottom: 5%;
 }
@@ -215,20 +256,29 @@ button:hover {
   opacity: 0.6;
 }
 
-.new-post-form input {
-  width: 300px;
+.comment-btn {
+  color: white;
+  background-color: #1434a4;
+  border: 1.5px solid #fedb00;
+  transition: background-color 0.1s;
+  width: 12%;
 }
 
-.edit-post-form {
-  margin-bottom: 5%;
+.upvote-btn {
+  color: white;
+  background-color: #1434a4;
+  border: 1.5px solid #fedb00;
+  transition: background-color 0.1s;
+  width: 10%;
 }
 
+/* bottom of page */
 footer {
-  border-top: 1px solid #fedb00;
+  border-top: thick double #fedb00;
   display: flex;
   justify-content: center;
   padding: 1%;
   font-size: 110%;
   font-family: 'Unica One', cursive;
-  color: #1434a4;
+  color: #0c2340;
 }
