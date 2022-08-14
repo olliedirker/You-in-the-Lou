@@ -2,13 +2,13 @@
   <img src='../assets/st.-louis-header.jpg' alt='St. Louis Skyline'/>
 </div>
 
-<ol class="post-list">
+<ul style="list-style-type:circle" class="post-list">
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
   </li>
   {{/each}}
-</ol>
+</ul>
 
 <div class="widget">
   <ul style="list-style-type:none">
