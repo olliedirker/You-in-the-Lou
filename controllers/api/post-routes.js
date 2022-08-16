@@ -3,7 +3,7 @@ const sequelize = require('../../config/connection');
 const { Post, User, Comment, Vote } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// get all users
+// get all posts with their attributes and certain attributes from other models
 router.get('/', (req, res) => {
   console.log('======================');
   Post.findAll({
@@ -42,6 +42,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// get one post by its id
 router.get('/:id', (req, res) => {
   Post.findOne({
     where: {
@@ -88,6 +89,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// create a post with a url, title and description
 router.post('/', withAuth, (req, res) => {
   Post.create({
     title: req.body.title,
@@ -102,6 +104,7 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
+// allows a user to vote on a post, which will show as a "like" feature
 router.put('/upvote', withAuth, (req, res) => {
   // custom static method created in models/Post.js
   Post.upvote(
@@ -115,6 +118,7 @@ router.put('/upvote', withAuth, (req, res) => {
     });
 });
 
+// edit a post by its id, can edit only title and description
 router.put('/:id', withAuth, (req, res) => {
   Post.update(
     {
@@ -140,6 +144,7 @@ router.put('/:id', withAuth, (req, res) => {
     });
 });
 
+// delete a whole post by its id
 router.delete('/:id', withAuth, (req, res) => {
   console.log('id', req.params.id);
   Post.destroy({

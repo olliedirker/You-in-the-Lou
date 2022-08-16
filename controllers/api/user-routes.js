@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// get one user by their id
 router.get('/:id', (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
@@ -59,8 +60,9 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// create a user by requiring them to create a username, provide their email, and make a password
 router.post('/', (req, res) => {
-  // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
+  // expects {username: 'BobsBurgers', email: 'bobsburgers@gmail.com', password: 'password1234'}
   User.create({
     username: req.body.username,
     email: req.body.email,
@@ -81,8 +83,9 @@ router.post('/', (req, res) => {
     });
 });
 
+// allow a user to login by their email and password, by finding that created user
 router.post('/login', (req, res) => {
-  // expects {email: 'lernantino@gmail.com', password: 'password1234'}
+  // expects {email: 'bobsburgers@gmail.com', password: 'password1234'}
   User.findOne({
     where: {
       email: req.body.email,
@@ -110,6 +113,7 @@ router.post('/login', (req, res) => {
   });
 });
 
+// allow a user to logout and destroy their session, if logged out the
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {

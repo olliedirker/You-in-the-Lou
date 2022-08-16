@@ -1,3 +1,4 @@
+// link to the helper functions for handlebars
 const {
   format_date,
   format_plural,
@@ -5,6 +6,7 @@ const {
   format_break,
 } = require('../utils/helpers');
 
+// show url and a shortened version off to the side of the hyperlinked title
 test('format_url() returns a simplified url string', () => {
   const url1 = format_url('http://test.com/page/1');
   const url2 = format_url('https://www.coolstuff.com/abcdefg/');
@@ -15,6 +17,7 @@ test('format_url() returns a simplified url string', () => {
   expect(url3).toBe('google.com');
 });
 
+// make sure correct usages of plural words are used
 test('format_plural() returns a pluralized word', () => {
   const word1 = format_plural('tiger', 1);
   const word2 = format_plural('lion', 2);
@@ -23,12 +26,14 @@ test('format_plural() returns a pluralized word', () => {
   expect(word2).toBe('lions');
 });
 
+// show created_at as a normal mm/dd/yyyy
 test('format_date() returns a date string', () => {
   const date = new Date('2020-03-20 16:12:03');
 
   expect(format_date(date)).toBe('3/20/2020');
 });
 
+// makes sure the paragraphs of post_description are displayed correctly
 test('format_break() replaces line breaks', () => {
   const paragraph = format_break('\n');
 
