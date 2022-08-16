@@ -11,6 +11,8 @@
     <div>
       <input name="post-title" type="text" value="{{post.title}}" />
       <span>({{format_url post.post_url}})</span>
+      <p></p>
+      <textarea name="post-description">{{post.post_description}}</textarea>
     </div>
     <div>
       {{post.vote_count}} {{format_plural "like" post.vote_count}} by you on {{format_date post.created_at}}
