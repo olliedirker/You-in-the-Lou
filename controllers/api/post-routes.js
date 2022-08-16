@@ -51,6 +51,7 @@ router.get('/:id', (req, res) => {
       'id',
       'post_url',
       'title',
+      'category_description',
       'post_description',
       'created_at',
       [
@@ -92,6 +93,7 @@ router.post('/', withAuth, (req, res) => {
   Post.create({
     title: req.body.title,
     post_url: req.body.post_url,
+    category_description: req.body.category_description,
     post_description: req.body.post_description,
     user_id: req.session.user_id,
   })

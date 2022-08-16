@@ -66,6 +66,10 @@ Post.init(
         isURL: true,
       },
     },
+    category_description: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
     post_description: {
       type: DataTypes.TEXT,
       allowNull: false,
