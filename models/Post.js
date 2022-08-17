@@ -17,7 +17,9 @@ class Post extends Model {
           'post_url',
           'title',
           'post_description',
+          'post_address',
           'created_at',
+          
           [
             sequelize.literal(
               '(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'
@@ -76,6 +78,10 @@ Post.init(
         model: 'user',
         key: 'id',
       },
+    },
+    post_address: {
+      type: DataTypes.TEXT,
+      allowNull: true,
     },
   },
   {
