@@ -56,6 +56,10 @@ header h1 {
   text-shadow: 0 0 10px #ffea00, 0 0 5px #ffea00, 0 0 10px #ffea00;
 }
 
+.animate__animated.animate__bounce {
+  --animate-duration: 10s;
+}
+
 .header-nav {
   font-family: 'Unica One', cursive;
   font-size: 1.1em;
