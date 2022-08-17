@@ -1,9 +1,10 @@
 <article class='post'>
   <div class='title'>
     <a href='{{post_url}}' target='_blank'>{{title}}</a>
-    <span>({{format_url post_url}})</span>
+    <span>({{format_url post_url}})</span></br>
+    <a href='http://maps.google.com/maps?q={{post_address}}'>
+      {{post_address}}</a>
     <p class='description'>{{{format_break post_description}}}</p>
-    <span name='post_address'>{{post_address}}</span>
   </div>
   <div class='meta'>
     {{vote_count}}
