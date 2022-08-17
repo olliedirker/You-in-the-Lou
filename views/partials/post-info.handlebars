@@ -3,10 +3,7 @@
     <a href='{{post_url}}' target='_blank'>{{title}}</a>
     <span>({{format_url post_url}})</span>
     <p class='description'>{{{format_break post_description}}}</p>
-     <div id="autocomplete" class="autocomplete-container">
-      <label for="post_address">Location</label>
-      <span name="post_address">{{{post_address}}}</span>
-    </div>
+    <span name='post_address'>{{post_address}}</span>
   </div>
   <div class='meta'>
     {{vote_count}}
