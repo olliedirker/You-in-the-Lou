@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// create our Post model
+// creates Post model
 class Post extends Model {
   static upvote(body, models) {
     return models.Vote.create({
@@ -17,7 +17,9 @@ class Post extends Model {
           'post_url',
           'title',
           'post_description',
+          'post_address',
           'created_at',
+          
           [
             sequelize.literal(
               '(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'
@@ -66,6 +68,10 @@ Post.init(
         isURL: true,
       },
     },
+    category_description: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
     post_description: {
       type: DataTypes.TEXT,
       allowNull: false,
@@ -76,6 +82,10 @@ Post.init(
         model: 'user',
         key: 'id',
       },
+    },
+    post_address: {
+      type: DataTypes.TEXT,
+      allowNull: true,
     },
   },
   {

@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 
+// loads environment variables
 require('dotenv').config();
 
 // create connection to our database via the local server or heroku
