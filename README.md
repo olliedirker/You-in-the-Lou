@@ -7,13 +7,21 @@ A group project created by [Oliver Dirker](https://github.com/olliedirker), [Sam
 To work together as a group, we utilized GitHub, VS Code, Slack, and Zoom.
 
 Our application utilizes:
+
 -Node.js and Express.js to create a RESTful API that allowed us to perform CRUD operations
+
 -Handlebars.js as the templating engine
+
 -MySQL and the Sequelize ORM for the database
+
 -Animate.css for our animation feature
+
 -A folder structure that meets the MVC paradigm
+
 -Authentication (express-session and cookies)
+
 -Environment variables to protect API keys and sensitive information
+
 -Heroku for the deployed application
 
 ## User Story
