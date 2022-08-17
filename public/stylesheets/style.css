@@ -228,6 +228,11 @@ button:hover {
   margin-bottom: 5%;
 }
 
+/* autocomplete*/
+.autocomplete-container{
+  position: relative;
+}
+
 /* delete button */
 .delete-post-btn {
   background-color: #e42217;
