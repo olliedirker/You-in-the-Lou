@@ -1,3 +1,4 @@
+// function listens to buttons on dashboard page and creates a post linked the the backend database
 async function newFormHandler(event) {
   event.preventDefault();
 

@@ -1,3 +1,4 @@
+// allows a created user to login
 async function loginFormHandler(event) {
   event.preventDefault();
 
@@ -22,6 +23,7 @@ async function loginFormHandler(event) {
   }
 }
 
+// creates a user
 async function signupFormHandler(event) {
   event.preventDefault();
 
