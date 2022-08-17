@@ -1,6 +1,6 @@
 # You in The Lou
 
-A group project created by (Oliver Dirker)[https://github.com/olliedirker], (Sam Moore)[https://github.com/semoore2093], and (Amy Gardiner)[https://github.com/amymgardiner].
+A group project created by [Oliver Dirker](https://github.com/olliedirker), [Sam Moore](https://github.com/semoore2093), and [Amy Gardiner](https://github.com/amymgardiner).
 
 ## Technologies Used
 
@@ -40,4 +40,4 @@ WHEN I look at the overall layout of the page, THEN I find it to be a polished, 
 
 ## Link to Application
 
-(You In The Lou)[https://gp-2.herokuapp.com/]
+[You In The Lou](https://gp-2.herokuapp.com/)
