@@ -41,6 +41,5 @@ WHEN I look at the overall layout of the page, THEN I find it to be a polished, 
 ## Link to Application
 
 [You In The Lou](https://gp-2.herokuapp.com/)
+
 ![gp-2 herokuapp com_](https://user-images.githubusercontent.com/99151426/185245761-61804530-780e-4819-a6e1-6ff350c004f6.png)
-
-
