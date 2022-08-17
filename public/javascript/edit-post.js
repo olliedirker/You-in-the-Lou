@@ -5,6 +5,7 @@ async function editFormHandler(event) {
   const post_description = document.querySelector(
     'textarea[name="post-description"]'
   ).value;
+  const post_address = document.querySelector('input[name="post_address"]').value;
   const id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
@@ -13,6 +14,7 @@ async function editFormHandler(event) {
     body: JSON.stringify({
       title,
       post_description,
+      post_address,
     }),
     headers: {
       'Content-Type': 'application/json',
