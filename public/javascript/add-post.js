@@ -1,6 +1,7 @@
 async function newFormHandler(event) {
   event.preventDefault();
-
+  
+//Locates current document to use POST method
   const title = document.querySelector('input[name="post-title"]').value;
   const post_url = document.querySelector('input[name="post-url"]').value;
   const post_description = document.querySelector(
@@ -27,7 +28,7 @@ async function newFormHandler(event) {
     alert(response.statusText);
   }
 }
-
+// Executes event on user submiting post
 document
   .querySelector('.new-post-form')
   .addEventListener('submit', newFormHandler);

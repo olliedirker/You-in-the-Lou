@@ -1,6 +1,6 @@
 async function loginFormHandler(event) {
   event.preventDefault();
-
+//Locates current document to use POST method
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
 
@@ -47,7 +47,7 @@ async function signupFormHandler(event) {
     }
   }
 }
-
+// Executes function on user submiting either login or sign up
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 
 document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);

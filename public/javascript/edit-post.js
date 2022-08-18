@@ -1,6 +1,7 @@
 async function editFormHandler(event) {
   event.preventDefault();
-
+  
+//Locates current document to use PUT method
   const title = document.querySelector('input[name="post-title"]').value.trim();
   const post_description = document.querySelector(
     'textarea[name="post-description"]'
@@ -27,7 +28,7 @@ async function editFormHandler(event) {
     alert(response.statusText);
   }
 }
-
+// Executes function on user submiting edit
 document
   .querySelector('.edit-post-form')
   .addEventListener('submit', editFormHandler);

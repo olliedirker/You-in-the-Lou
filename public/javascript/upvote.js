@@ -1,6 +1,6 @@
 async function upvoteClickHandler(event) {
   event.preventDefault();
-
+  //Locates current document to use PUT method
   const id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
@@ -20,5 +20,5 @@ async function upvoteClickHandler(event) {
     alert(response.statusText);
   }
 }
-
+// Executes function on user clicking 'like'
 document.querySelector('.upvote-btn').addEventListener('click', upvoteClickHandler);

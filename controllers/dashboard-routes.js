@@ -51,7 +51,7 @@ router.get('/', withAuth, (req, res) => {
       res.status(500).json(err);
     });
 });
-
+//gets posts by ID
 router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
