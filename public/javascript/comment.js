@@ -1,16 +1,11 @@
 // function creates a comment on the single-post page
 async function commentFormHandler(event) {
   event.preventDefault();
-<<<<<<< HEAD
-  
-//Locates current document to use POST method
-  const comment_text = document.querySelector('textarea[name="comment-body"]').value.trim();
-=======
 
+  //Locates current document to use POST method
   const comment_text = document
     .querySelector('textarea[name="comment-body"]')
     .value.trim();
->>>>>>> 595fd18a6af14e802962d0be145df083336fc56d
   const post_id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
@@ -34,12 +29,8 @@ async function commentFormHandler(event) {
     }
   }
 }
-<<<<<<< HEAD
-// Execute function on user submiting comment
-document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);
-=======
 
+// Execute function on user submiting comment
 document
   .querySelector('.comment-form')
   .addEventListener('submit', commentFormHandler);
->>>>>>> 595fd18a6af14e802962d0be145df083336fc56d

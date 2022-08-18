@@ -21,12 +21,8 @@ async function upvoteClickHandler(event) {
     alert(response.statusText);
   }
 }
-<<<<<<< HEAD
-// Executes function on user clicking 'like'
-document.querySelector('.upvote-btn').addEventListener('click', upvoteClickHandler);
-=======
 
+// Executes function on user clicking 'like'
 document
   .querySelector('.upvote-btn')
   .addEventListener('click', upvoteClickHandler);
->>>>>>> 595fd18a6af14e802962d0be145df083336fc56d
