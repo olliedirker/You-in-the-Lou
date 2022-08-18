@@ -1,7 +1,7 @@
 // functions of the test from helpers.test.js
 module.exports = {
   format_date: (date) => {
-    var moment = require('moment-timezone');
+    const moment = require('moment-timezone');
     return `${moment(date).tz('America/Chicago').format('l')}`;
   },
   format_url: (url) => {
