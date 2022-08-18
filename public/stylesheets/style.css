@@ -308,3 +308,29 @@ footer {
   font-family: 'Unica One', cursive;
   color: #0c2340;
 }
+
+@media only screen and (max-width: 770px) {
+  .post-list {
+    float: none;
+    width: 100%;
+  }
+
+  .widget {
+    float: none;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .widget {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .header-nav {
+    font-size: 0.9em;
+  }
+}

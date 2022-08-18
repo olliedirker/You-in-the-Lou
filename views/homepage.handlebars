@@ -3,15 +3,6 @@
   <img src='../assets/st.-louis-header.jpg' alt='St. Louis Skyline'/>
 </div>
 
-{{!-- lists of created posts --}}
-<ul style="list-style-type:circle" class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ul>
-
 {{!-- side widget to stay in one place and show popular local attractions --}}
 <div class="widget">
   <ul style="list-style-type:none">
@@ -31,3 +22,12 @@
     <li><a href='https://www.fabulousfox.com'>&#127917; &nbsp;&nbsp; The Fabulous Fox Theatre</a></li>
   </ul>
 </div>
+
+{{!-- lists of created posts --}}
+<ul style="list-style-type:circle" class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ul>
