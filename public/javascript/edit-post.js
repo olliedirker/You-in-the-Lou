@@ -1,8 +1,8 @@
-// listens for the save button or the comment button and will either add a comment or edit the post's title, url, and/or address
+// Listens for the save button or the comment button and will either add a comment or edit the post's title, url, and/or address
 async function editFormHandler(event) {
   event.preventDefault();
-  
-//Locates current document to use PUT method
+
+  // Locates current document to use PUT method
   const title = document.querySelector('input[name="post-title"]').value.trim();
   const post_description = document.querySelector(
     'textarea[name="post-description"]'
