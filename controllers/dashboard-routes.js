@@ -52,9 +52,7 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
-
 // get a post by id to edit it by hitting edit button on dashboard
-
 router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
