@@ -327,10 +327,20 @@ footer {
   .widget {
     width: 100%;
   }
+
+  button {
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 376px) {
   .header-nav {
     font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .header-nav {
+    display: flex;
   }
 }
