@@ -2,7 +2,7 @@
 module.exports = {
   format_date: (date) => {
     var moment = require('moment-timezone');
-    return `${moment(date).tz('America/Chicago').format('L')}`;
+    return `${moment(date).tz('America/Chicago').format('l')}`;
   },
   format_url: (url) => {
     return url
