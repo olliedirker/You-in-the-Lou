@@ -56,6 +56,10 @@ header h1 {
   text-shadow: 0 0 10px #ffea00, 0 0 5px #ffea00, 0 0 10px #ffea00;
 }
 
+.animate__animated.animate__bounce {
+  --animate-duration: 10s;
+}
+
 .header-nav {
   font-family: 'Unica One', cursive;
   font-size: 1.1em;
@@ -190,6 +194,10 @@ button:hover {
   border: solid 2px #ffea00;
 }
 
+button:active {
+  transform: translateY(4px);
+}
+
 /* dashbaord */
 .post {
   margin-bottom: 2%;
@@ -228,11 +236,6 @@ button:hover {
   margin-bottom: 5%;
 }
 
-/* autocomplete*/
-.autocomplete-container{
-  position: relative;
-}
-
 /* delete button */
 .delete-post-btn {
   background-color: #e42217;
@@ -244,6 +247,10 @@ button:hover {
   background-color: rgb(228, 34, 23, 0.9);
   color: #1434a4;
   border: solid 2px #c41e3a;
+}
+
+.delete-post-btn:active {
+  transform: translateY(4px);
 }
 
 /* single post */
@@ -274,12 +281,20 @@ button:hover {
   width: 12%;
 }
 
+.comment-btn:active {
+  transform: translateY(4px);
+}
+
 .upvote-btn {
   color: white;
   background-color: #1434a4;
   border: 1.5px solid #fedb00;
   transition: background-color 0.1s;
   width: 10%;
+}
+
+.upvote-btn:active {
+  transform: translateY(4px);
 }
 
 /* bottom of page */

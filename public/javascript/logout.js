@@ -1,8 +1,9 @@
+// logout button and takes away autorization
 async function logout() {
   //Locates current document to use POST method
   const response = await fetch('/api/users/logout', {
     method: 'post',
-    headers: { 'Content-Type': 'application/json' }
+    headers: { 'Content-Type': 'application/json' },
   });
 
   if (response.ok) {

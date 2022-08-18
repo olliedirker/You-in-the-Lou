@@ -1,3 +1,4 @@
+// allows a created user to login
 async function loginFormHandler(event) {
   event.preventDefault();
 //Locates current document to use POST method
@@ -9,9 +10,9 @@ async function loginFormHandler(event) {
       method: 'post',
       body: JSON.stringify({
         email,
-        password
+        password,
       }),
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
@@ -22,6 +23,7 @@ async function loginFormHandler(event) {
   }
 }
 
+// creates a user
 async function signupFormHandler(event) {
   event.preventDefault();
 
@@ -35,9 +37,9 @@ async function signupFormHandler(event) {
       body: JSON.stringify({
         username,
         email,
-        password
+        password,
       }),
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
@@ -47,7 +49,16 @@ async function signupFormHandler(event) {
     }
   }
 }
+<<<<<<< HEAD
 // Executes function on user submiting either login or sign up
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+=======
 
-document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+document
+  .querySelector('.login-form')
+  .addEventListener('submit', loginFormHandler);
+>>>>>>> 595fd18a6af14e802962d0be145df083336fc56d
+
+document
+  .querySelector('.signup-form')
+  .addEventListener('submit', signupFormHandler);

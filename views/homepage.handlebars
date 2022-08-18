@@ -1,7 +1,9 @@
+{{!-- hero image --}}
 <div class='hero'>
   <img src='../assets/st.-louis-header.jpg' alt='St. Louis Skyline'/>
 </div>
 
+{{!-- lists of created posts --}}
 <ul style="list-style-type:circle" class="post-list">
   {{#each posts as |post|}}
   <li>
@@ -10,6 +12,7 @@
   {{/each}}
 </ul>
 
+{{!-- side widget to stay in one place and show popular local attractions --}}
 <div class="widget">
   <ul style="list-style-type:none">
     <h2>Always a sure bet:</h2>

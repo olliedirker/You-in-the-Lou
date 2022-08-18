@@ -1,3 +1,4 @@
+// function listens to buttons on dashboard page and creates a post linked the the backend database
 async function newFormHandler(event) {
   event.preventDefault();
   
@@ -7,7 +8,9 @@ async function newFormHandler(event) {
   const post_description = document.querySelector(
     'textarea[name="post-description"]'
   ).value;
-  const post_address = document.querySelector('input[name="post_address"]').value;
+  const post_address = document.querySelector(
+    'input[name="post_address"]'
+  ).value;
 
   const response = await fetch(`/api/posts`, {
     method: 'POST',

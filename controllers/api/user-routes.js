@@ -114,7 +114,7 @@ router.post('/login', (req, res) => {
   });
 });
 
-// allow a user to logout and destroy their session, if logged out the
+// allow a user to logout and destroy their session, if logged out they wont have autorization to create, comment, like, edit, or delete posts
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
@@ -125,8 +125,9 @@ router.post('/logout', (req, res) => {
   }
 });
 
+// update user by id
 router.put('/:id', (req, res) => {
-  // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
+  // expects {username: 'BobsBurgers', email: 'bobsburgers@gmail.com', password: 'password1234'}
 
   // pass in req.body instead to only update what's passed through
   User.update(req.body, {
@@ -148,6 +149,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// delete a user by id
 router.delete('/:id', (req, res) => {
   User.destroy({
     where: {
