@@ -1,9 +1,8 @@
 // functions of the test from helpers.test.js
 module.exports = {
   format_date: (date) => {
-    return `${new Date(date).getMonth() + 1}/${new Date(
-      date
-    ).getDate()}/${new Date(date).getFullYear()}`;
+    var moment = require('moment-timezone');
+    return `${moment(date).tz('America/Chicago').format('L')}`;
   },
   format_url: (url) => {
     return url

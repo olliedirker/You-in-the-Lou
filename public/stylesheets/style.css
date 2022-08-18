@@ -87,6 +87,7 @@ header h1 {
 .btn-no-style:hover {
   background: none;
   color: #e42217;
+  border: none;
 }
 
 .dashboard-btn {
